@@ -1,4 +1,5 @@
 #pragma once
+#include "Card.h"
 class Card
 {
 private:
@@ -23,7 +24,7 @@ public:
 		return suit;
 	}
 
-	string View()
+	std::string View()
 	{
 		return Library.values.get(value) + suit;
 	}

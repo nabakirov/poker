@@ -26,7 +26,7 @@ bool isEqual(Card second);</panel_attributes>
     <coordinates>
       <x>420</x>
       <y>30</y>
-      <w>160</w>
+      <w>190</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>Hand
@@ -35,8 +35,8 @@ Card set[5]
 int combination
 vector&lt;Card&gt; pairs
 -
-Hand()
-int getComb(Card[])
+Hand(Card[5])
+int getCombination()
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -103,7 +103,7 @@ void outWinner(int)</panel_attributes>
 -
 map&lt;int, string&gt; values
 char suit[4]
-map&lt;int, string&gt; combinations</panel_attributes>
+map&lt;int, string&gt;combinations</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
