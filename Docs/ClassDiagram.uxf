@@ -15,7 +15,7 @@ int value
 char suit 
 -
 Card(int, char)
-string View()
+string view()
 bool isBigger(Card second)
 bool isLower(Card second)
 bool isEqual(Card second);</panel_attributes>
@@ -35,7 +35,7 @@ Card set[5]
 int combination
 vector&lt;Card&gt; pairs
 -
-Hand(Card[])
+Hand()
 int getComb(Card[])
 </panel_attributes>
     <additional_attributes/>
