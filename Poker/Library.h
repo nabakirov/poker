@@ -7,7 +7,7 @@
 static class Library
 {
 public:
-	std::map<int, std::string> values = {
+	static std::map<int, std::string> values = {
 		{0, "2"}, 
 		{1, "3"},
 		{2, "4"},
@@ -22,8 +22,8 @@ public:
 		{11, "K"},
 		{12, "A"}
 	};
-	char suit[4] = {'C', 'H', 'S', 'D'};
-	std::map<int, std::string> combination { 
+	static char suit[4] = {'C', 'H', 'S', 'D'};
+	static std::map<int, std::string> combination { 
 		{0, "HIGT CARD"},
 		{1, "PAIR"},
 		{2, "TWO PAIR"},

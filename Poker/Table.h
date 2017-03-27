@@ -11,6 +11,7 @@ private:
 	std::vector<Hand> hands;
 	std::vector<Card> deck;
 public:
+	void setHandsNum(int n);
 	void generateDeck();
 	void genetareHand();
 	void run();

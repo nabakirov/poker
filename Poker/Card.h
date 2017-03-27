@@ -7,6 +7,7 @@ private:
 	char suit;
 
 public:
+	Card();
 	Card(int, char);
 	int getValue();
 	char getSuit();

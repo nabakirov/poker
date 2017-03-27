@@ -11,6 +11,9 @@ private:
 	int combination;
 	std::vector<Card> pairs;
 public:
+	Hand();
 	Hand(Card[5]);
 	int getCombination();
+	Card getPairs();
+	Card getHighCard();
 };

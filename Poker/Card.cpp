@@ -1,45 +1,45 @@
-#pragma once
+
 #include "Card.h"
-class Card
-{
-private:
-	int value;
-	char suit;
+#include "Library.h"
 
-public:
+	
+	
+	Card::Card() {};
 
-	Card(int value, char suit)
+
+	Card::Card(int value, char suit)
 	{
-		this->value = value;
-		this->suit = suit;
+		Card::value = value;
+		Card::suit = suit;
 	}
 
-	int getValue()
+	int Card::getValue()
 	{
 		return value;
 	}
 
-	char getSuit()
+	char Card::getSuit()
 	{
 		return suit;
 	}
 
-	std::string View()
+	std::string Card::view()
 	{
-		return Library.values.get(value) + suit;
+		std::string str = Library::values.find(value);
+		return Library::values.find(value) + std::string(1,suit);
 	}
 
-	bool isBigger(Card second)
+	bool Card::isBigger(Card second)
 	{
 		return value > second.value;
 	}
 
-	bool isLower(Card second)
+	bool Card::isLower(Card second)
 	{
 		return value < second.value;
 	}
 
-	bool isEqual(Card second)
+	bool Card::isEqual(Card second)
 	{
 		return value == second.value;
 	}
