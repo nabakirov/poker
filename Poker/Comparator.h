@@ -3,7 +3,7 @@
 
 
 
-static class Comparator
+class Comparator
 {
 public:
 	int getWinner(Hand, Hand);

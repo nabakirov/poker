@@ -25,8 +25,9 @@
 
 	std::string Card::view()
 	{
-		std::string str = Library::values.find(value);
-		return Library::values.find(value) + std::string(1,suit);
+		
+		std::string str = Library::values.at(value) + suit;
+		return str;
 	}
 
 	bool Card::isBigger(Card second)
@@ -45,4 +46,3 @@
 	}
 
 
-};

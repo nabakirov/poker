@@ -13,6 +13,6 @@ private:
 public:
 	void setHandsNum(int n);
 	void generateDeck();
-	void genetareHand();
+	void genetareHand(Card *);
 	void run();
 };

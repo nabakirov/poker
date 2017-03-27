@@ -3,13 +3,14 @@
 
 Hand::Hand() {};
 
-void sortHand(Card hand[])
+
+void Hand::sortHand(Card hand[])
 {
 	for (int i = 0; i < 5; i++)
 	{
 		for (int j = 0; j < 5; j++)
 		{
-			if (hand[i].getValue < hand[j].getValue)
+			if (hand[i].getValue() < hand[j].getValue())
 			{
 				std::swap(hand[i], hand[j]);
 			}
@@ -28,6 +29,8 @@ Hand::Hand(Card hand[5])
 	//sorting the hand
 	sortHand(hand);
 
+	
+
 	//Geting combination
 	int pairs = 0;
 	int comb;
@@ -37,7 +40,7 @@ Hand::Hand(Card hand[5])
 		{
 			if (i != j)
 			{
-				if (hand[i].getValue == hand[j].getValue)
+				if (hand[i].getValue() == hand[j].getValue())
 				{
 					pairs++;
 					Hand::pairs.push_back(hand[i]);
@@ -80,18 +83,18 @@ Hand::Hand(Card hand[5])
 		int cnts = 0;
 		for (int i = 1; i < 5; i++)
 		{
-			if (hand[i - 1].getValue + 1 == hand[i].getValue)
+			if (hand[i - 1].getValue() + 1 == hand[i].getValue())
 			{
 				cntn++;
 			}
-			if (hand[i - 1].getSuit == hand[i].getSuit)
+			if (hand[i - 1].getSuit() == hand[i].getSuit())
 			{
 				cnts++;
 			}
 		}
 		if (cntn == 4 && cnts == 4)
 		{
-			if (hand[4].getValue == 12)
+			if (hand[4].getValue() == 12)
 			{
 				//ROYAL FLUSH
 				comb = 9;
@@ -130,7 +133,8 @@ int Hand::getCombination()
 Card Hand::getPairs()
 {
 	return Hand::pairs[Hand::pairs.size() - 1];
-}Card Hand::getHighCard()
+}Card Hand::getCard(int index)
 {
-	return Hand::set[4];
+	return Hand::set[index];
 }
+

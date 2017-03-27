@@ -114,6 +114,8 @@
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Comparator.cpp" />
     <ClCompile Include="Hand.cpp" />
+    <ClCompile Include="Io.cpp" />
+    <ClCompile Include="Library.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Table.cpp" />
   </ItemGroup>
