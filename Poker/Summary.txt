@@ -1,0 +1,7 @@
+First Player: 
+	2S		4C		5D		10D		AS	
+	HIGT CARD
+Second Player: 
+	4D		7C		8S		10C		QC	
+	HIGT CARD
+First Player Won

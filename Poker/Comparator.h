@@ -6,5 +6,5 @@
 class Comparator
 {
 public:
-	int getWinner(Hand, Hand);
+	static int getWinner(Hand, Hand);
 };

@@ -47,8 +47,6 @@ void Table::run()
 
 	Table game;
 
-	
-
 	game.generateDeck();
 	Card cards[5];
 	game.genetareHand(cards);
@@ -56,13 +54,22 @@ void Table::run()
 	game.genetareHand(cards);
 	Hand hand2(cards);
 	
-	Comparator comparator;
-	int compare = comparator.getWinner(hand1, hand2);
-	std::cout << game.deck.size() << std::endl;
 	
-	std::cout << "Player 1:";
-	Io::outHand(hand1);
-	std::cout << "Player 2:";
-	Io::outHand(hand2);
-	Io::outWinner(compare);
+	int compare = Comparator::getWinner(hand1, hand2);
+//	std::cout << game.deck.size() << std::endl;
+	int chosen;
+	std::cout << "Where would you like to print the result?\n\t1 - in file\n\t2 - on display\n";
+	std::cin >> chosen;
+	if (chosen == 2)
+	{
+		std::cout << "Player 1:";
+		Io::outHand(hand1);
+		std::cout << "Player 2:";
+		Io::outHand(hand2);
+		Io::outWinner(compare);
+	}
+	else if (chosen == 1)
+	{
+		Io::outInFile(hand1, hand2, compare);
+	}
 }

@@ -7,4 +7,6 @@ class Io
 public:
 	static void outHand(Hand);
 	static void outWinner(int);
+	static void outInFile(Hand, Hand, int);
+	
 };

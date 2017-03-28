@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>30</y>
+      <x>0</x>
+      <y>200</y>
       <w>220</w>
       <h>200</h>
     </coordinates>
@@ -27,29 +27,30 @@ bool isEqual(Card second);</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
-      <y>40</y>
+      <x>400</x>
+      <y>170</y>
       <w>190</w>
-      <h>160</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>Hand
 -
 Card set[5]
 int combination
 vector&lt;int&gt; pairs
+void sortHand(Card*)
 -
 Hand()
 Hand(Card[5])
 int getCombination()
 Card getPairs()
-Card getHighCard</panel_attributes>
+Card getCard(int)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>740</x>
-      <y>50</y>
+      <x>700</x>
+      <y>220</y>
       <w>210</w>
       <h>140</h>
     </coordinates>
@@ -57,14 +58,14 @@ Card getHighCard</panel_attributes>
 -
 
 -
-int getWinner(Hand, Hand)</panel_attributes>
+static int getWinner(Hand, Hand)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
-      <y>260</y>
+      <x>390</x>
+      <y>430</y>
       <w>170</w>
       <h>160</h>
     </coordinates>
@@ -85,39 +86,40 @@ void run()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
-      <y>490</y>
-      <w>150</w>
-      <h>90</h>
+      <x>390</x>
+      <y>660</y>
+      <w>240</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Io
 -
 
 -
-void outHand(Hand)
-void outWinner(int)</panel_attributes>
+static void outHand(Hand)
+static void outWinner(int)
+static void outInFile(Hand, Hand, int)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>370</y>
+      <x>670</x>
+      <y>540</y>
       <w>210</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>Library
 -
-map&lt;int, string&gt; values
-char suit[4]
-map&lt;int, string&gt;combinations</panel_attributes>
+static map&lt;int, string&gt; values
+static char suit[4]
+static map&lt;int, string&gt;combinations</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>330</y>
+      <x>120</x>
+      <y>500</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -127,19 +129,19 @@ map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>90</y>
+      <x>210</x>
+      <y>220</y>
       <w>210</w>
-      <h>30</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>190.0;10.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>90</y>
+      <x>210</x>
+      <y>260</y>
       <w>290</w>
       <h>190</h>
     </coordinates>
@@ -149,8 +151,8 @@ map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>120</y>
+      <x>490</x>
+      <y>290</y>
       <w>230</w>
       <h>160</h>
     </coordinates>
@@ -160,8 +162,8 @@ map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>340</y>
+      <x>210</x>
+      <y>510</y>
       <w>200</w>
       <h>60</h>
     </coordinates>
@@ -171,19 +173,19 @@ map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>500</x>
-      <y>190</y>
+      <x>460</x>
+      <y>340</y>
       <w>50</w>
-      <h>90</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>30.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>30.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>500</x>
-      <y>410</y>
+      <x>460</x>
+      <y>580</y>
       <w>30</w>
       <h>100</h>
     </coordinates>

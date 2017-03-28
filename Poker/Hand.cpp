@@ -21,20 +21,9 @@ void Hand::sortHand(Card *hand)
 
 Hand::Hand(Card hand[5])
 {
-	
-
 	//sorting the hand
-	for (int i = 0; i < 5; i++)
-	{
-		for (int j = 0; j < 5; j++)
-		{
-			if (hand[i].getValue() < hand[j].getValue())
-			{
-			
-				std::swap(hand[i], hand[j]);
-			}
-		}
-	}
+	sortHand(hand);
+
 	for (int i = 0; i < 5; i++)
 	{
 		Hand::set[i] = hand[i];
