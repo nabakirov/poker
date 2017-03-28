@@ -5,6 +5,6 @@
 class Io
 {
 public:
-	void outHand(Hand);
-	void outWinner(int);
+	static void outHand(Hand);
+	static void outWinner(int);
 };

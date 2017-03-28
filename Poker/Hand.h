@@ -10,7 +10,7 @@ private:
 	Card set[5];
 	int combination;
 	std::vector<Card> pairs;
-	void sortHand(Card[]);
+	void sortHand(Card*);
 public:
 	
 	Hand();

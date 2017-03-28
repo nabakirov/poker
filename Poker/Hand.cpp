@@ -4,7 +4,7 @@
 Hand::Hand() {};
 
 
-void Hand::sortHand(Card hand[])
+void Hand::sortHand(Card *hand)
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -21,15 +21,24 @@ void Hand::sortHand(Card hand[])
 
 Hand::Hand(Card hand[5])
 {
+	
+
+	//sorting the hand
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			if (hand[i].getValue() < hand[j].getValue())
+			{
+			
+				std::swap(hand[i], hand[j]);
+			}
+		}
+	}
 	for (int i = 0; i < 5; i++)
 	{
 		Hand::set[i] = hand[i];
 	}
-
-	//sorting the hand
-	sortHand(hand);
-
-	
 
 	//Geting combination
 	int pairs = 0;

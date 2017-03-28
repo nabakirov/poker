@@ -29,10 +29,11 @@ void Table::generateDeck()
 void Table::genetareHand(Card *cards)
 {
 	srand(time(NULL));
-	int randNum = rand() % Table::deck.size();
+	
 	
 	for (int i = 0; i < 5; i++)
 	{
+		int randNum = rand() % Table::deck.size();
 		cards[i] = Table::deck[randNum];
 		std::swap(Table::deck[randNum], Table::deck[Table::deck.size() - 1]);
 		Table::deck.pop_back();
@@ -57,11 +58,11 @@ void Table::run()
 	
 	Comparator comparator;
 	int compare = comparator.getWinner(hand1, hand2);
-	std::cout << Table::deck.size() << std::endl;
-	Io output;
+	std::cout << game.deck.size() << std::endl;
+	
 	std::cout << "Player 1:";
-	output.outHand(hand1);
+	Io::outHand(hand1);
 	std::cout << "Player 2:";
-	output.outHand(hand2);
-	output.outWinner(compare);
+	Io::outHand(hand2);
+	Io::outWinner(compare);
 }
