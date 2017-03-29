@@ -104,6 +104,19 @@ Hand::Hand(Card hand[5])
 			}
 			
 		}
+		else if (cnts == 4 && cntn == 3)
+		{
+			if (hand[0].getValue() == 0 && hand[4].getValue() == 12)
+			{
+				//STRAIGHT FLUSH
+				comb = 8;
+			}
+			else 
+			{
+				//FLUSH
+				comb = 5;
+			}
+		}
 		else if (cntn == 4)
 		{
 			//STRAIGHT
@@ -114,6 +127,7 @@ Hand::Hand(Card hand[5])
 			//FLUSH
 			comb = 5;
 		}
+		
 		else
 		{
 			//HIGT CARD

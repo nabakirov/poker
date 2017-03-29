@@ -114,6 +114,7 @@
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Comparator.cpp" />
     <ClCompile Include="Hand.cpp" />
+    <ClCompile Include="HandEvaluatorTest.cpp" />
     <ClCompile Include="Io.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="main.cpp" />
@@ -126,6 +127,7 @@
     <ClInclude Include="Io.h" />
     <ClInclude Include="Library.h" />
     <ClInclude Include="Table.h" />
+    <ClInclude Include="HandEvaluatorTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

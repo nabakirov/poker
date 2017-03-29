@@ -15,4 +15,5 @@ public:
 	bool isBigger(Card);
 	bool isLower(Card);
 	bool isEqual(Card);	
+	
 };

@@ -7,6 +7,7 @@
 #include <iostream>
 #include "Comparator.h"
 #include "Io.h"
+#include "HandEvaluatorTest.h"
 
 void Table::setHandsNum(int n)
 {
@@ -44,7 +45,26 @@ void Table::genetareHand(Card *cards)
 
 void Table::run()
 {
-
+	HandEvaluatorTest test1;
+	test1.testHighCard();
+	test1.testPair();
+	test1.testTwoPairs();
+	test1.testThreeOfAKind();
+	test1.testThreeOfAKind2();
+	test1.testStraight();
+	test1.testStraight2();
+	test1.testFlush();
+	test1.testFullHouse();
+	test1.testFourOfAKind();
+	test1.testFourOfAKind2();
+	test1.testStraightFlush();
+	test1.testStraightFlush2();
+	test1.testStraightFlush3();
+	test1.testRoyalFlush();
+	test1.testRoyalFlush2();
+	test1.testRoyalFlush3();
+	
+	/*
 	Table game;
 
 	game.generateDeck();
@@ -56,7 +76,7 @@ void Table::run()
 	
 	
 	int compare = Comparator::getWinner(hand1, hand2);
-//	std::cout << game.deck.size() << std::endl;
+
 	int chosen;
 	std::cout << "Where would you like to print the result?\n\t1 - in file\n\t2 - on display\n";
 	std::cin >> chosen;
@@ -72,4 +92,6 @@ void Table::run()
 	{
 		Io::outInFile(hand1, hand2, compare);
 	}
+	*/
+
 }
