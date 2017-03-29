@@ -119,6 +119,8 @@
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Table.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="TestComparator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
@@ -128,6 +130,8 @@
     <ClInclude Include="Library.h" />
     <ClInclude Include="Table.h" />
     <ClInclude Include="HandEvaluatorTest.h" />
+    <ClInclude Include="test.h" />
+    <ClInclude Include="TestComparator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
