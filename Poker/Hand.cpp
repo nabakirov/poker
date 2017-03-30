@@ -106,7 +106,7 @@ Hand::Hand(Card hand[5])
 		}
 		else if (cnts == 4 && cntn == 3)
 		{
-			if (hand[0].getValue() == 0 && hand[4].getValue() == 12)
+			if (hand[0].getValue() == 0 && hand[4].getValue() == 12 && hand[1].getValue() == 1 && hand[2].getValue() == 2 && hand[3].getValue() == 3)
 			{
 				//STRAIGHT FLUSH
 				comb = 8;

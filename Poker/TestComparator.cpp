@@ -605,7 +605,7 @@ void TestComparator::testNotEqualPairs()
 	cards2[1] = Card(1, 'D'); //3
 	cards2[2] = Card(11, 'D'); //K
 	cards2[3] = Card(6, 'S'); //8
-	cards2[4] = Card(6, 'S'); //8
+	cards2[4] = Card(5, 'S'); //7
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{

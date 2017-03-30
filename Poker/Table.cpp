@@ -47,8 +47,8 @@ void Table::run()
 {
 //	test::combTest();
 	test::comparatorTest();
-	/*
-	Table game;
+	
+/*	Table game;
 
 	game.generateDeck();
 	Card cards[5];
@@ -75,6 +75,6 @@ void Table::run()
 	{
 		Io::outInFile(hand1, hand2, compare);
 	}
+	
 	*/
-
 }
