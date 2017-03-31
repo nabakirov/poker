@@ -385,21 +385,24 @@ void TestComparator::testNotEqualStraights()
 	Hand hand3;
 	Card cards3[5];
 
-	cards3[0] = Card(4, 'C'); //6
-	cards3[1] = Card(5, 'H'); //7
-	cards3[2] = Card(6, 'S'); //8
-	cards3[3] = Card(7, 'D'); //9
-	cards3[4] = Card(8, 'C'); //10
+	cards3[0] = Card(12, 'H'); //A
+	cards3[1] = Card(0, 'S'); //2
+	cards3[2] = Card(1, 'D'); //3
+	cards3[3] = Card(2, 'C'); //4
+	cards3[4] = Card(3, 'H'); //5
+
+	
 	hand3 = Hand(cards3);
 
 	Hand hand4;
 	Card cards4[5];
 
-	cards4[0] = Card(12, 'H'); //A
-	cards4[1] = Card(0, 'S'); //2
-	cards4[2] = Card(1, 'D'); //3
-	cards4[3] = Card(2, 'C'); //4
-	cards4[4] = Card(3, 'H'); //5
+	cards4[0] = Card(4, 'C'); //6
+	cards4[1] = Card(5, 'H'); //7
+	cards4[2] = Card(6, 'S'); //8
+	cards4[3] = Card(7, 'D'); //9
+	cards4[4] = Card(8, 'C'); //10
+	
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{

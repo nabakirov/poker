@@ -142,9 +142,9 @@ int Hand::getCombination()
 }	
 
 //returns the last element of vector pairs
-Card Hand::getPairs()
+std::vector<Card> Hand::getPairs()
 {
-	return Hand::pairs[Hand::pairs.size() - 1];
+	return Hand::pairs;
 }Card Hand::getCard(int index)
 {
 	return Hand::set[index];

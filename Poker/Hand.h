@@ -16,6 +16,6 @@ public:
 	Hand();
 	Hand(Card[5]);
 	int getCombination();
-	Card getPairs();
+	std::vector<Card> getPairs();
 	Card getCard(int);
 };

@@ -12,18 +12,52 @@ int Comparator::getWinner(Hand hand1, Hand hand2)
 	}
 	else
 	{
+		
+		
 		//If hand1 equals to hand2 by pair
 		if (hand1.getCombination() == 2 || hand1.getCombination() == 1 || hand1.getCombination() == 3 || hand1.getCombination() == 6 || hand1.getCombination() == 7)
 		{
-			if (hand1.getPairs().isBigger(hand2.getPairs()))
+			if (hand1.getPairs()[hand1.getPairs().size() - 1].isBigger(hand2.getPairs()[hand2.getPairs().size() - 1]))
 			{
 				return 1;
 			}
-			else if (hand1.getPairs().isLower(hand2.getPairs()))
+			else if (hand1.getPairs()[hand1.getPairs().size() - 1].isLower(hand2.getPairs()[hand2.getPairs().size() - 1]))
 			{
 				return 2;
 			}
-			else if (hand1.getPairs().isEqual(hand2.getPairs()))
+			else if (hand1.getPairs().size() - 2 != 0 && hand1.getPairs()[hand1.getPairs().size() - 1].isEqual(hand2.getPairs()[hand2.getPairs().size() - 1]))
+			{
+				if (hand1.getPairs()[hand1.getPairs().size() - 2].isBigger(hand2.getPairs()[hand2.getPairs().size() - 2]))
+				{
+					return 1;
+				}
+				else if (hand1.getPairs()[hand1.getPairs().size() - 2].isLower(hand2.getPairs()[hand2.getPairs().size() - 2]))
+				{
+					return 2;
+				}
+				else if (hand1.getPairs().size() - 3 != 0 && hand1.getPairs()[hand1.getPairs().size() - 2].isEqual(hand2.getPairs()[hand2.getPairs().size() - 2]))
+				{
+					
+					if (hand1.getPairs()[hand1.getPairs().size() - 3].isBigger(hand2.getPairs()[hand2.getPairs().size() - 3]))
+					{
+						return 1;
+					}
+					else if (hand1.getPairs()[hand1.getPairs().size() - 3].isLower(hand2.getPairs()[hand2.getPairs().size() - 3]))
+					{
+						return 2;
+					}
+					
+					else
+					{
+						return 0;
+					}
+				}
+				else
+				{
+					return 0;
+				}
+			}
+			else
 			{
 				return 0;
 			}
