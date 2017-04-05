@@ -1,13 +1,5 @@
 #include "Table.h"
-#include "Card.h"
-#include "Hand.h"
-#include "Library.h"
-#include <ctime>
-#include <stdlib.h>
-#include <iostream>
-#include "Comparator.h"
-#include "Io.h"
-#include "test.h"
+
 
 void Table::setHandsNum(int n)
 {
@@ -43,12 +35,9 @@ void Table::genetareHand(Card *cards)
 	
 }
 
-void Table::run()
+void Table::play()
 {
-//	test::combTest();
-	test::comparatorTest();
-	
-/*	Table game;
+	Table game;
 
 	game.generateDeck();
 	Card cards[5];
@@ -56,8 +45,8 @@ void Table::run()
 	Hand hand1(cards);
 	game.genetareHand(cards);
 	Hand hand2(cards);
-	
-	
+
+
 	int compare = Comparator::getWinner(hand1, hand2);
 
 	int chosen;
@@ -75,6 +64,23 @@ void Table::run()
 	{
 		Io::outInFile(hand1, hand2, compare);
 	}
-	
-	*/
+}
+
+void Table::run()
+{
+///////////////////////////////////////////////////////////////////////////////////////////////
+// If you want to test the programm uncomment chosen test below and comment play after tests //
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	test::combTest();
+	test::comparatorTest();
+
+
+////////////////////////////////////////////////////////////////
+// If you want to play comment tests above and uncomment play //
+////////////////////////////////////////////////////////////////
+
+//	Table::play();
+
 }

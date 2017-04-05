@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>200</y>
+      <x>30</x>
+      <y>90</y>
       <w>220</w>
       <h>200</h>
     </coordinates>
@@ -27,8 +27,8 @@ bool isEqual(Card second);</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>170</y>
+      <x>430</x>
+      <y>60</y>
       <w>190</w>
       <h>180</h>
     </coordinates>
@@ -49,8 +49,8 @@ Card getCard(int)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
-      <y>220</y>
+      <x>730</x>
+      <y>110</y>
       <w>210</w>
       <h>140</h>
     </coordinates>
@@ -64,8 +64,8 @@ static int getWinner(Hand, Hand)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>430</y>
+      <x>420</x>
+      <y>320</y>
       <w>170</w>
       <h>160</h>
     </coordinates>
@@ -86,8 +86,8 @@ void run()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>660</y>
+      <x>420</x>
+      <y>550</y>
       <w>240</w>
       <h>120</h>
     </coordinates>
@@ -103,8 +103,8 @@ static void outInFile(Hand, Hand, int)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
-      <y>540</y>
+      <x>700</x>
+      <y>430</y>
       <w>210</w>
       <h>90</h>
     </coordinates>
@@ -118,8 +118,8 @@ static map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>500</y>
+      <x>150</x>
+      <y>390</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -129,8 +129,8 @@ static map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>220</y>
+      <x>240</x>
+      <y>110</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
@@ -140,8 +140,8 @@ static map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>260</y>
+      <x>240</x>
+      <y>150</y>
       <w>290</w>
       <h>190</h>
     </coordinates>
@@ -151,19 +151,19 @@ static map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>290</y>
+      <x>520</x>
+      <y>150</y>
       <w>230</w>
-      <h>160</h>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>210.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>10.0;170.0;210.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>510</y>
+      <x>240</x>
+      <y>400</y>
       <w>200</w>
       <h>60</h>
     </coordinates>
@@ -173,8 +173,8 @@ static map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>340</y>
+      <x>490</x>
+      <y>230</y>
       <w>50</w>
       <h>110</h>
     </coordinates>
@@ -184,12 +184,23 @@ static map&lt;int, string&gt;combinations</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>580</y>
+      <x>490</x>
+      <y>470</y>
       <w>30</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>90</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;60.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

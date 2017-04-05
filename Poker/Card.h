@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Library.h"
 class Card
 {
 private:
