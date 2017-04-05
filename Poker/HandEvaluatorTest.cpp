@@ -1,6 +1,5 @@
 #include "HandEvaluatorTest.h"
-#include "Library.h"
-#include <iostream>
+
 
 
 void HandEvaluatorTest::testRoyalFlush()

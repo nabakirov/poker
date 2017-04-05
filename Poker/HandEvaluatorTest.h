@@ -1,6 +1,8 @@
 #pragma once
 #include "Hand.h"
 #include "Card.h"
+#include "Library.h"
+#include <iostream>
 
 class HandEvaluatorTest
 {

@@ -1,8 +1,5 @@
 #include "Io.h"
-#include <iostream>
-#include "Library.h"
-#include <fstream>
-#include <stdlib.h>
+
 
 
 void Io::outHand(Hand hand)
@@ -76,5 +73,6 @@ void Io::outInFile(Hand hand1, Hand hand2, int compare)
 		{
 			out << "Something Went Wrong" << std::endl;
 		}
+		std::cout << "go to the project file and open 'summary.txt'";
 	}
 }
