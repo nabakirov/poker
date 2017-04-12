@@ -16,15 +16,15 @@ void Io::outWinner(int compare)
 {
 	if (compare == 1)
 	{
-		std::cout << "First Player Won" << std::endl;
+		std::cout << "\t\t\t//////////\n\t\t\tFirst Player Won\n\t\t\t//////////" << std::endl;
 	}
 	else if (compare == 2)
 	{
-		std::cout << "Second Player Won" << std::endl;
+		std::cout << "\t\t\t//////////\n\t\t\tSecond Player Won\n\t\t\t//////////" << std::endl;
 	}
 	else if (compare == 0)
 	{
-		std::cout << "Equal" << std::endl;
+		std::cout << "\t\t\t//////////\n\t\t\tEqual\n\t\t\t//////////" << std::endl;
 	}
 	else
 	{
@@ -41,11 +41,12 @@ void Io::outInFile(Hand hand1, Hand hand2, int compare)
 	out.open("Summary.txt", _IOS_Nocreate);
 	if (out.fail())
 	{
-		std::cout << std::endl << "File does not exist! Create the file 'Summary.txt' and repeat\n";
+		std::cout << std::endl << "File does not exist! Create the file 'Summary.txt' in the project's files and repeat\n";
 	}
 	else
 	{
 		out << "First Player: \n";
+		
 		for (int i = 0; i < 5; i++)
 		{
 			out << "\t" << hand1.getCard(i).view() << "\t";
@@ -73,6 +74,6 @@ void Io::outInFile(Hand hand1, Hand hand2, int compare)
 		{
 			out << "Something Went Wrong" << std::endl;
 		}
-		std::cout << "go to the project file and open 'summary.txt'";
+		std::cout << "go to the project's files and open 'summary.txt'";
 	}
 }
