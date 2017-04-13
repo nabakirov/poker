@@ -16,10 +16,8 @@
 class Table
 {
 private:
-	
-	std::vector<Hand> hands;
 	std::vector<Card> deck;
-	void play();
+	void play();	
 public:
 	
 	void generateDeck();
