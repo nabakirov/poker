@@ -145,7 +145,9 @@ int Hand::getCombination()
 std::vector<Card> Hand::getPairs()
 {
 	return Hand::pairs;
-}Card Hand::getCard(int index)
+}
+
+Card Hand::getCard(int index)
 {
 	return Hand::set[index];
 }
