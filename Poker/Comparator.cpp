@@ -15,6 +15,7 @@ int Comparator::getWinner(Hand hand1, Hand hand2)
 		//If hand1 equals to hand2 by pair
 		if (hand1.getCombination() == 2 || hand1.getCombination() == 1 || hand1.getCombination() == 3 || hand1.getCombination() == 6 || hand1.getCombination() == 7)
 		{
+			
 			return ifEqualPair(hand1, hand2, 1);	
 		}
 		else
@@ -48,19 +49,22 @@ int Comparator::ifEqual(Hand hand1, Hand hand2, int k) {
 	}
 }
 int Comparator::ifEqualPair(Hand hand1, Hand hand2, int k) {
+	if (hand1.getPairs().size() - k >= 0)
+	{
 
-	if (hand1.getPairs()[hand1.getPairs().size() - k].isBigger(hand2.getPairs()[hand2.getPairs().size() - k]))
+	
+	if (hand1.getPairs()[hand1.getPairs().size() - k].first.isBigger(hand2.getPairs()[hand2.getPairs().size() - k].first))
 	{
 		return 1;
 	}
-	else if (hand1.getPairs()[hand1.getPairs().size() - k].isLower(hand2.getPairs()[hand2.getPairs().size() - k]))
+	else if (hand1.getPairs()[hand1.getPairs().size() - k].first.isLower(hand2.getPairs()[hand2.getPairs().size() - k].first))
 	{
 		return 2;
 	}
-	else if (hand1.getPairs()[hand1.getPairs().size() - k].isEqual(hand2.getPairs()[hand2.getPairs().size() - k]))
+	else if (hand1.getPairs()[hand1.getPairs().size() - k].first.isEqual(hand2.getPairs()[hand2.getPairs().size() - k].first))
 	{
 		k++;
-		if (hand1.getPairs().size() - k != 0)
+		if (hand1.getPairs().size() - k >= 0)
 		{
 			return ifEqual(hand1, hand2, k);
 		}
@@ -68,6 +72,7 @@ int Comparator::ifEqualPair(Hand hand1, Hand hand2, int k) {
 		{
 			return 0;
 		}
+	}
 	}
 }
 

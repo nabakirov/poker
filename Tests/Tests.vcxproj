@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{26759C95-F593-4A28-90B3-9508902DBE22}</ProjectGuid>
-    <RootNamespace>Poker</RootNamespace>
+    <ProjectGuid>{4F420C71-D64F-40B8-86F8-696077E7CFA0}</ProjectGuid>
+    <RootNamespace>Tests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,14 +70,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -111,27 +111,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Card.cpp" />
-    <ClCompile Include="Comparator.cpp" />
-    <ClCompile Include="Hand.cpp" />
-    <ClCompile Include="HandEvaluatorTest.cpp" />
-    <ClCompile Include="Io.cpp" />
-    <ClCompile Include="Library.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Table.cpp" />
-    <ClCompile Include="test.cpp" />
-    <ClCompile Include="TestComparator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Card.h" />
-    <ClInclude Include="Comparator.h" />
-    <ClInclude Include="Hand.h" />
     <ClInclude Include="HandEvaluatorTest.h" />
-    <ClInclude Include="Io.h" />
-    <ClInclude Include="Library.h" />
-    <ClInclude Include="Table.h" />
-    <ClInclude Include="test.h" />
-    <ClInclude Include="TestComparator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

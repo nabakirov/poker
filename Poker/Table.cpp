@@ -75,19 +75,21 @@ void Table::play()
 }
 void Table::run()
 {
-////////////////////////////////////////////////////////////
-// If you want to test the programm uncomment chosen test//
-//	below and comment 'play' string after 'test' sytings //
-///////////////////////////////////////////////////////////
-
-
-//	test::combTest();
-//	test::comparatorTest();
-
-
-////////////////////////////////////////////////////////////////
-// If you want to play comment tests above and uncomment play //
-////////////////////////////////////////////////////////////////
+	int n = 9;
 	
-	Table::play();
+	std::cout << "\tTest the program - 1\n\tRun the program - 2:\n\tExit - 0\n";
+	std::cin >> n;
+
+	if (n == 1)
+	{
+		test::combTest();
+		test::comparatorTest();
+		system("pause");
+	}
+	
+	else if (n == 2)
+	{
+		Table::play();
+	}
+	
 }

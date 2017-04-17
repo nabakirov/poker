@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Poker", "Poker\Poker.vcxproj", "{26759C95-F593-4A28-90B3-9508902DBE22}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tests", "Tests\Tests.vcxproj", "{4F420C71-D64F-40B8-86F8-696077E7CFA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{26759C95-F593-4A28-90B3-9508902DBE22}.Release|x64.Build.0 = Release|x64
 		{26759C95-F593-4A28-90B3-9508902DBE22}.Release|x86.ActiveCfg = Release|Win32
 		{26759C95-F593-4A28-90B3-9508902DBE22}.Release|x86.Build.0 = Release|Win32
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Debug|x64.ActiveCfg = Debug|x64
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Debug|x64.Build.0 = Debug|x64
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Debug|x86.ActiveCfg = Debug|Win32
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Debug|x86.Build.0 = Debug|Win32
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Release|x64.ActiveCfg = Release|x64
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Release|x64.Build.0 = Release|x64
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Release|x86.ActiveCfg = Release|Win32
+		{4F420C71-D64F-40B8-86F8-696077E7CFA0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

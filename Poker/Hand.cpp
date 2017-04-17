@@ -29,57 +29,25 @@ Hand::Hand(Card hand[5])
 		Hand::set[i] = hand[i];
 	}
 
+	std::vector<std::pair<Card, int> > pair;
 	//Geting combination
 	int pairs = 0;
 	int comb;
+	int cntn = 0;
+	int cnts = 0;
 	for (int i = 0; i < 5; i++)
 	{
-		for (int j = 0; j < 5; j++)
+		
+		if (pair.empty() || pair[pair.size() - 1].first.getValue() != hand[i].getValue())
 		{
-			if (i != j)
-			{
-				if (hand[i].getValue() == hand[j].getValue())
-				{
-					pairs++;
-					Hand::pairs.push_back(hand[i]);
-				}
-			}
+			pair.push_back({ hand[i], 1 });
 		}
-	}
-	if (pairs == 2)
-	{
-		//Pair
-		comb = 1;
-	}
-	else if (pairs == 6)
-	{
-		//three of a kind
-		comb = 3;
-
-	}
-	else if (pairs == 4)
-	{
-		//TWO PAIR
-		comb = 2;
-
-	}
-	else if (pairs == 12)
-	{
-		//FOUR OF A KIND
-		comb = 7;
-
-	}
-	else if (pairs == 8)
-	{
-		//FULL HOUSE
-		comb = 6;
-
-	}
-	else
-	{
-		int cntn = 0;
-		int cnts = 0;
-		for (int i = 1; i < 5; i++)
+		else
+		{
+			pair[pair.size() - 1].second++;
+		}
+		
+		if (i != 0)
 		{
 			if (hand[i - 1].getValue() + 1 == hand[i].getValue())
 			{
@@ -90,6 +58,45 @@ Hand::Hand(Card hand[5])
 				cnts++;
 			}
 		}
+		
+	}
+	Hand::pairs = pair;
+	if (pair.size() == 4)
+	{
+		//Pair
+		comb = 1;
+	}
+	else if (pair.size() == 3)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			if (pair[i].second == 3)
+			{
+				//three of a kind
+				comb = 3;
+			}
+			else if (pair[i].second == 2)
+			{
+				//TWO PAIR
+				comb = 2;
+			}
+		}
+	}
+	else if (pair.size() == 2)
+	{
+		if (pair[0].second == 4 || pair[1].second == 4)
+		{
+			//FOUR OF A KIND
+			comb = 7;
+		}
+		else if (pair[0].second == 3 || pair[1].second == 3)
+		{
+			//FULL HOUSE
+			comb = 6;
+		}
+	}
+	else
+	{
 		if (cntn == 4 && cnts == 4)
 		{
 			if (hand[4].getValue() == 12)
@@ -102,7 +109,6 @@ Hand::Hand(Card hand[5])
 				//STRAIGHT FLUSH
 				comb = 8;
 			}
-			
 		}
 		else if (cnts == 4 && cntn == 3)
 		{
@@ -136,13 +142,14 @@ Hand::Hand(Card hand[5])
 	}
 	Hand::combination = comb;
 }
+
 int Hand::getCombination()
 {
 	return Hand::combination;
 }	
 
-//returns the last element of vector pairs
-std::vector<Card> Hand::getPairs()
+
+std::vector<std::pair<Card, int>> Hand::getPairs()
 {
 	return Hand::pairs;
 }
