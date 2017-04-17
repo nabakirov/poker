@@ -1,16 +1,18 @@
 #pragma once
 #include <vector>
-#include "Card.h"
-#include "Hand.h"
-#include "Library.h"
 #include <ctime>
 #include <stdlib.h>
 #include <iostream>
+#include <conio.h>
+#include <string>
+
+#include "Card.h"
+#include "Hand.h"
+#include "Library.h"
 #include "Comparator.h"
 #include "Io.h"
 #include "test.h"
-#include <conio.h>
-#include <string>
+
 
 
 class Table
