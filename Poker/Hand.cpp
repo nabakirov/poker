@@ -8,12 +8,18 @@ void Hand::sortHand(Card *hand)
 {
 	for (int i = 0; i < 5; i++)
 	{
-		for (int j = 0; j < 5; j++)
+		bool sorted = true;
+		for (int j = 1; j < 5; j++)
 		{
-			if (hand[i].getValue() < hand[j].getValue())
+			if (hand[j].getValue() < hand[j - 1].getValue())
 			{
-				std::swap(hand[i], hand[j]);
+				std::swap(hand[j], hand[j - 1]);
+				sorted = false;
 			}
+		}
+		if (sorted)
+		{
+			break;
 		}
 	}
 }

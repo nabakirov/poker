@@ -21,7 +21,6 @@
 
 	std::string Card::view()
 	{
-		
 		std::string str = Library::values.at(value) + suit;
 		return str;
 	}
