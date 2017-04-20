@@ -37,7 +37,7 @@ Hand::Hand(Card hand[5])
 
 	std::vector<std::pair<Card, int> > pair;
 	//Geting combination
-	int pairs = 0;
+	
 	int comb;
 	int cntn = 0;
 	int cnts = 0;
@@ -80,11 +80,13 @@ Hand::Hand(Card hand[5])
 			{
 				//three of a kind
 				comb = 3;
+				break;
 			}
 			else if (pair[i].second == 2)
 			{
 				//TWO PAIR
 				comb = 2;
+				break;
 			}
 		}
 	}

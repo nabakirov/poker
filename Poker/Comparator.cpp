@@ -49,31 +49,28 @@ int Comparator::ifEqual(Hand hand1, Hand hand2, int k) {
 	}
 }
 int Comparator::ifEqualPair(Hand hand1, Hand hand2, int k) {
-	if (hand1.getPairs().size() - k >= 0)
-	{
-
 	
-	if (hand1.getPairs()[hand1.getPairs().size() - k].first.isBigger(hand2.getPairs()[hand2.getPairs().size() - k].first))
-	{
-		return 1;
-	}
-	else if (hand1.getPairs()[hand1.getPairs().size() - k].first.isLower(hand2.getPairs()[hand2.getPairs().size() - k].first))
-	{
-		return 2;
-	}
-	else if (hand1.getPairs()[hand1.getPairs().size() - k].first.isEqual(hand2.getPairs()[hand2.getPairs().size() - k].first))
-	{
-		k++;
-		if (hand1.getPairs().size() - k >= 0)
+		if (hand1.getPairs()[hand1.getPairs().size() - k].first.isBigger(hand2.getPairs()[hand2.getPairs().size() - k].first))
 		{
-			return ifEqual(hand1, hand2, k);
+			return 1;
 		}
-		else
+		else if (hand1.getPairs()[hand1.getPairs().size() - k].first.isLower(hand2.getPairs()[hand2.getPairs().size() - k].first))
 		{
-			return 0;
+			return 2;
 		}
-	}
-	}
+		else if (hand1.getPairs()[hand1.getPairs().size() - k].first.isEqual(hand2.getPairs()[hand2.getPairs().size() - k].first))
+		{
+			k++;
+			if (hand1.getPairs().size() - k >= 0)
+			{
+				return ifEqual(hand1, hand2, k);
+			}
+			else
+			{
+				return 0;
+			}
+		}
+	
 }
 
 		
