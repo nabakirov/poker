@@ -16,11 +16,11 @@ void HandEvaluatorTest::testRoyalFlush()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "ROYAL FLUSH")
 	{
-		std::cout << "testRoyalFlush1 \t complete\n";
+		std::cout << "testRoyalFlush1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testRoyalFlush1 \t failed\n";
+		std::cout << "testRoyalFlush1 - failed\n";
 	}
 }
 void HandEvaluatorTest::testRoyalFlush2()
@@ -37,11 +37,11 @@ void HandEvaluatorTest::testRoyalFlush2()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k != "ROYAL FLUSH")
 	{
-		std::cout << "testRoyalFlush2 \t complete\n";
+		std::cout << "testRoyalFlush2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testRoyalFlush2 \t failed\n";
+		std::cout << "testRoyalFlush2 - failed\n";
 	}
 }
 void HandEvaluatorTest::testRoyalFlush3()
@@ -58,11 +58,11 @@ void HandEvaluatorTest::testRoyalFlush3()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "ROYAL FLUSH")
 	{
-		std::cout << "testRoyalFlush2 \t complete\n";
+		std::cout << "testRoyalFlush2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testRoyalFlush2 \t failed\n";
+		std::cout << "testRoyalFlush2 - failed\n";
 	}
 }
 void HandEvaluatorTest::testStraightFlush()
@@ -79,11 +79,11 @@ void HandEvaluatorTest::testStraightFlush()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "STRAIGHT FLUSH")
 	{
-		std::cout << "testStraightFlush \t complete\n";
+		std::cout << "testStraightFlush - complete\n";
 	}
 	else
 	{
-		std::cout << "testStraightFlush \t failed\n";
+		std::cout << "testStraightFlush - failed\n";
 	}
 }
 void HandEvaluatorTest::testStraightFlush2()
@@ -100,11 +100,11 @@ void HandEvaluatorTest::testStraightFlush2()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "STRAIGHT FLUSH")
 	{
-		std::cout << "testStraightFlush2 \t complete\n";
+		std::cout << "testStraightFlush2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testStraightFlush2 \t failed\n";
+		std::cout << "testStraightFlush2 - failed\n";
 	}
 }
 void HandEvaluatorTest::testStraightFlush3()
@@ -121,11 +121,11 @@ void HandEvaluatorTest::testStraightFlush3()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k != "STRAIGHT FLUSH")
 	{
-		std::cout << "testStraightFlush3 \t complete\n";
+		std::cout << "testStraightFlush3 - complete\n";
 	}
 	else
 	{
-		std::cout << "testStraightFlush3 \t failed\n";
+		std::cout << "testStraightFlush3 - failed\n";
 	}
 }
 void HandEvaluatorTest::testFourOfAKind()
@@ -142,11 +142,11 @@ void HandEvaluatorTest::testFourOfAKind()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "FOUR OF A KIND")
 	{
-		std::cout << "testFourOfAKind \t complete\n";
+		std::cout << "testFourOfAKind - complete\n";
 	}
 	else
 	{
-		std::cout << "testFourOfAKind \t failed\n";
+		std::cout << "testFourOfAKind - failed\n";
 	}
 }
 void HandEvaluatorTest::testFourOfAKind2()
@@ -163,11 +163,11 @@ void HandEvaluatorTest::testFourOfAKind2()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k != "FOUR OF A KIND")
 	{
-		std::cout << "testFourOfAKind2 \t complete\n";
+		std::cout << "testFourOfAKind2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testFourOfAKind2 \t failed\n";
+		std::cout << "testFourOfAKind2 - failed\n";
 	}
 }
 void HandEvaluatorTest::testFullHouse()
@@ -184,11 +184,11 @@ void HandEvaluatorTest::testFullHouse()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "FULL HOUSE")
 	{
-		std::cout << "testFullHouse \t complete\n";
+		std::cout << "testFullHouse - complete\n";
 	}
 	else
 	{
-		std::cout << "testFullHouse \t failed\n";
+		std::cout << "testFullHouse - failed\n";
 	}
 }
 void HandEvaluatorTest::testFlush()
@@ -205,11 +205,11 @@ void HandEvaluatorTest::testFlush()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "FLUSH")
 	{
-		std::cout << "testFlush \t complete\n";
+		std::cout << "testFlush - complete\n";
 	}
 	else
 	{
-		std::cout << "testFlush \t failed\n";
+		std::cout << "testFlush - failed\n";
 	}
 }
 void HandEvaluatorTest::testStraight()
@@ -226,11 +226,11 @@ void HandEvaluatorTest::testStraight()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "STRAIGHT")
 	{
-		std::cout << "testStraight \t complete\n";
+		std::cout << "testStraight - complete\n";
 	}
 	else
 	{
-		std::cout << "testStraight \t failed\n";
+		std::cout << "testStraight - failed\n";
 	}
 }
 void HandEvaluatorTest::testStraight2()
@@ -247,11 +247,11 @@ void HandEvaluatorTest::testStraight2()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k != "STRAIGHT")
 	{
-		std::cout << "testStraight2 \t complete\n";
+		std::cout << "testStraight2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testStraight2 \t failed\n";
+		std::cout << "testStraight2 - failed\n";
 	}
 }
 void HandEvaluatorTest::testThreeOfAKind()
@@ -268,11 +268,11 @@ void HandEvaluatorTest::testThreeOfAKind()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "THREE OF A KIND")
 	{
-		std::cout << "testThreeOfAKind \t complete\n";
+		std::cout << "testThreeOfAKind - complete\n";
 	}
 	else
 	{
-		std::cout << "testThreeOfAKind \t failed\n";
+		std::cout << "testThreeOfAKind - failed\n";
 	}
 }
 void HandEvaluatorTest::testThreeOfAKind2()
@@ -289,11 +289,11 @@ void HandEvaluatorTest::testThreeOfAKind2()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k != "THREE OF A KIND")
 	{
-		std::cout << "testThreeOfAKind2 \t complete\n";
+		std::cout << "testThreeOfAKind2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testThreeOfAKind2 \t failed\n";
+		std::cout << "testThreeOfAKind2 - failed\n";
 	}
 }
 void HandEvaluatorTest::testTwoPairs()
@@ -310,11 +310,11 @@ void HandEvaluatorTest::testTwoPairs()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "TWO PAIR")
 	{
-		std::cout << "testTwoPairs \t complete\n";
+		std::cout << "testTwoPairs - complete\n";
 	}
 	else
 	{
-		std::cout << "testTwoPairs \t failed\n";
+		std::cout << "testTwoPairs - failed\n";
 	}
 }
 void HandEvaluatorTest::testPair()
@@ -331,11 +331,11 @@ void HandEvaluatorTest::testPair()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "PAIR")
 	{
-		std::cout << "testPair \t complete\n";
+		std::cout << "testPair - complete\n";
 	}
 	else
 	{
-		std::cout << "testPair \t failed\n";
+		std::cout << "testPair - failed\n";
 	}
 }
 void HandEvaluatorTest::testHighCard()
@@ -352,10 +352,10 @@ void HandEvaluatorTest::testHighCard()
 	std::string k = Library::combination.at(hand.getCombination());
 	if (k == "HIGT CARD")
 	{
-		std::cout << "testHighCard \t complete\n";
+		std::cout << "testHighCard - complete\n";
 	}
 	else
 	{
-		std::cout << "testHighCard \t failed\n";
+		std::cout << "testHighCard - failed\n";
 	}
 }

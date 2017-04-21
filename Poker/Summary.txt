@@ -1,8 +1,9 @@
 First Player: 
-	4C		7D		8H		9H		QS	
+	2S		3S		9C		JC		AS	
 	HIGT CARD
 Second Player: 
-	5H		7S		8C		JH		AH	
+	2H		5D		6S		9D		KH	
 	HIGT CARD
-Second Player Won
-
+			////////////////
+			First Player Won
+			////////////////

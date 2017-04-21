@@ -23,11 +23,11 @@ void TestComparator::testRoyalFlushsAreEqual()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testRoyalFlushsAreEqual \t complete\n";
+		std::cout << "testRoyalFlushsAreEqual - complete\n";
 	}
 	else
 	{
-		std::cout << "testRoyalFlushsAreEqual \t failed\n";
+		std::cout << "testRoyalFlushsAreEqual - failed\n";
 	}
 }
 void TestComparator::testEqualStrightFlushs()
@@ -53,11 +53,11 @@ void TestComparator::testEqualStrightFlushs()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testRoyalFlushsAreEqual \t complete\n";
+		std::cout << "testRoyalFlushsAreEqual - complete\n";
 	}
 	else
 	{
-		std::cout << "testRoyalFlushsAreEqual \t failed\n";
+		std::cout << "testRoyalFlushsAreEqual - failed\n";
 	}
 }
 void TestComparator::testNotEqualStrightFlushs()
@@ -83,11 +83,11 @@ void TestComparator::testNotEqualStrightFlushs()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualStrightFlushs1 \t complete\n";
+		std::cout << "testNotEqualStrightFlushs1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualStrightFlushs1 \t failed\n";
+		std::cout << "testNotEqualStrightFlushs1 - failed\n";
 	}
 
 	Hand hand3;
@@ -111,11 +111,11 @@ void TestComparator::testNotEqualStrightFlushs()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualStrightFlushs2 \t complete\n";
+		std::cout << "testNotEqualStrightFlushs2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualStrightFlushs2 \t failed\n";
+		std::cout << "testNotEqualStrightFlushs2 - failed\n";
 	}
 }
 void TestComparator::testNotEqualFourOfAKind()
@@ -141,11 +141,11 @@ void TestComparator::testNotEqualFourOfAKind()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualFourOfAKind1 \t complete\n";
+		std::cout << "testNotEqualFourOfAKind1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualFourOfAKind1 \t failed\n";
+		std::cout << "testNotEqualFourOfAKind1 - failed\n";
 	}
 
 	Hand hand3;
@@ -169,11 +169,11 @@ void TestComparator::testNotEqualFourOfAKind()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualFourOfAKind2 \t complete\n";
+		std::cout << "testNotEqualFourOfAKind2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualFourOfAKind2 \t failed\n";
+		std::cout << "testNotEqualFourOfAKind2 - failed\n";
 	}
 }
 void TestComparator::testNotEqualFullHouse()
@@ -199,11 +199,11 @@ void TestComparator::testNotEqualFullHouse()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualFullHouse1 \t complete\n";
+		std::cout << "testNotEqualFullHouse1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualFullHouse1 \t failed\n";
+		std::cout << "testNotEqualFullHouse1 - failed\n";
 	}
 
 	Hand hand3;
@@ -227,11 +227,11 @@ void TestComparator::testNotEqualFullHouse()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualFullHouse2 \t complete\n";
+		std::cout << "testNotEqualFullHouse2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualFullHouse2 \t failed\n";
+		std::cout << "testNotEqualFullHouse2 - failed\n";
 	}
 }
 void TestComparator::testEqualFlushes()
@@ -257,11 +257,11 @@ void TestComparator::testEqualFlushes()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testEqualFlushes \t complete\n";
+		std::cout << "testEqualFlushes - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualFlushes \t failed\n";
+		std::cout << "testEqualFlushes - failed\n";
 	}
 }
 void TestComparator::testNotEqualFlushes()
@@ -287,11 +287,11 @@ void TestComparator::testNotEqualFlushes()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualFlushes1 \t\t complete\n";
+		std::cout << "testNotEqualFlushes1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualFlushes1 \t\t failed\n";
+		std::cout << "testNotEqualFlushes1 - failed\n";
 	}
 
 	Hand hand3;
@@ -315,11 +315,11 @@ void TestComparator::testNotEqualFlushes()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualFlushes2 \t\t complete\n";
+		std::cout << "testNotEqualFlushes2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualFlushes2 \t\t failed\n";
+		std::cout << "testNotEqualFlushes2 - failed\n";
 	}
 }
 void TestComparator::testEqualStraights()
@@ -345,11 +345,11 @@ void TestComparator::testEqualStraights()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testEqualStraights \t\t complete\n";
+		std::cout << "testEqualStraights - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualStraights \t\t failed\n";
+		std::cout << "testEqualStraights - failed\n";
 	}
 }
 void TestComparator::testNotEqualStraights()
@@ -375,11 +375,11 @@ void TestComparator::testNotEqualStraights()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualStraights1 \t complete\n";
+		std::cout << "testNotEqualStraights1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualStraights1 \t failed\n";
+		std::cout << "testNotEqualStraights1 - failed\n";
 	}
 
 	Hand hand3;
@@ -406,11 +406,11 @@ void TestComparator::testNotEqualStraights()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualStraights2 \t complete\n";
+		std::cout << "testNotEqualStraights2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualStraights2 \t failed\n";
+		std::cout << "testNotEqualStraights2 - failed\n";
 	}
 }
 void TestComparator::testNotEqualThreeOfAKind()
@@ -436,11 +436,11 @@ void TestComparator::testNotEqualThreeOfAKind()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualThreeOfAKind1 \t complete\n";
+		std::cout << "testNotEqualThreeOfAKind1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualThreeOfAKind1 \t failed\n";
+		std::cout << "testNotEqualThreeOfAKind1 - failed\n";
 	}
 
 	Hand hand3;
@@ -464,11 +464,11 @@ void TestComparator::testNotEqualThreeOfAKind()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualThreeOfAKind2 \t complete\n";
+		std::cout << "testNotEqualThreeOfAKind2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualThreeOfAKind2 \t failed\n";
+		std::cout << "testNotEqualThreeOfAKind2 - failed\n";
 	}
 }
 void TestComparator::testEqualTwoPairs()
@@ -494,11 +494,11 @@ void TestComparator::testEqualTwoPairs()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testEqualTwoPairs \t complete\n";
+		std::cout << "testEqualTwoPairs - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualTwoPairs \t failed\n";
+		std::cout << "testEqualTwoPairs - failed\n";
 	}
 }
 void TestComparator::testNotEqualTwoPairs()
@@ -524,11 +524,11 @@ void TestComparator::testNotEqualTwoPairs()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testEqualTwoPairs1 \t complete\n";
+		std::cout << "testEqualTwoPairs1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualTwoPairs1 \t failed\n";
+		std::cout << "testEqualTwoPairs1 - failed\n";
 	}
 
 	Hand hand3;
@@ -552,11 +552,11 @@ void TestComparator::testNotEqualTwoPairs()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testEqualTwoPairs2 \t complete\n";
+		std::cout << "testEqualTwoPairs2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualTwoPairs2 \t failed\n";
+		std::cout << "testEqualTwoPairs2 - failed\n";
 	}
 }
 void TestComparator::testEqualPairs()
@@ -582,11 +582,11 @@ void TestComparator::testEqualPairs()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testEqualPairs \t\t\t complete\n";
+		std::cout << "testEqualPairs - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualPairs \t\t\t failed\n";
+		std::cout << "testEqualPairs - failed\n";
 	}
 }
 void TestComparator::testNotEqualPairs()
@@ -612,11 +612,11 @@ void TestComparator::testNotEqualPairs()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualPairs1 \t\t complete\n";
+		std::cout << "testNotEqualPairs1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualPairs1 \t\t failed\n";
+		std::cout << "testNotEqualPairs1 - failed\n";
 	}
 
 	Hand hand3;
@@ -640,11 +640,11 @@ void TestComparator::testNotEqualPairs()
 	hand4 = Hand(cards4);
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualPairs2 \t\t complete\n";
+		std::cout << "testNotEqualPairs2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualPairs2 \t\t failed\n";
+		std::cout << "testNotEqualPairs2 - failed\n";
 	}
 }
 void TestComparator::testEqualHighCard()
@@ -670,11 +670,11 @@ void TestComparator::testEqualHighCard()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 0)
 	{
-		std::cout << "testEqualHighCard \t complete\n";
+		std::cout << "testEqualHighCard - complete\n";
 	}
 	else
 	{
-		std::cout << "testEqualHighCard \t failed\n";
+		std::cout << "testEqualHighCard - failed\n";
 	}
 }
 void TestComparator::testNotEqualHighCard()
@@ -700,11 +700,11 @@ void TestComparator::testNotEqualHighCard()
 	hand2 = Hand(cards2);
 	if (Comparator::getWinner(hand1, hand2) == 1)
 	{
-		std::cout << "testNotEqualHighCard1 \t\t complete\n";
+		std::cout << "testNotEqualHighCard1 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualHighCard1 \t\t failed\n";
+		std::cout << "testNotEqualHighCard1 - failed\n";
 	}
 
 	Hand hand3;
@@ -729,10 +729,10 @@ void TestComparator::testNotEqualHighCard()
 	
 	if (Comparator::getWinner(hand3, hand4) == 2)
 	{
-		std::cout << "testNotEqualHighCard2 \t\t complete\n";
+		std::cout << "testNotEqualHighCard2 - complete\n";
 	}
 	else
 	{
-		std::cout << "testNotEqualHighCard2 \t\t failed\n";
+		std::cout << "testNotEqualHighCard2 - failed\n";
 	}
 }

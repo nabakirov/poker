@@ -16,15 +16,15 @@ void Io::outWinner(int compare)
 {
 	if (compare == 1)
 	{
-		std::cout << "\t\t\t//////////\n\t\t\tFirst Player Won\n\t\t\t//////////" << std::endl;
+		std::cout << "\t\t\t////////////////\n\t\t\tFirst Player Won\n\t\t\t////////////////" << std::endl;
 	}
 	else if (compare == 2)
 	{
-		std::cout << "\t\t\t//////////\n\t\t\tSecond Player Won\n\t\t\t//////////" << std::endl;
+		std::cout << "\t\t\t/////////////////\n\t\t\tSecond Player Won\n\t\t\t/////////////////" << std::endl;
 	}
 	else if (compare == 0)
 	{
-		std::cout << "\t\t\t//////////\n\t\t\tEqual\n\t\t\t//////////" << std::endl;
+		std::cout << "\t\t\t/////\n\t\t\tEqual\n\t\t\t/////" << std::endl;
 	}
 	else
 	{
@@ -60,15 +60,15 @@ void Io::outInFile(Hand hand1, Hand hand2, int compare)
 		out << std::endl << "\t" << Library::combination.at(hand2.getCombination()) << std::endl;
 		if (compare == 1)
 		{
-			out << "First Player Won" << std::endl;
+			out << "\t\t\t////////////////\n\t\t\tFirst Player Won\n\t\t\t////////////////" << std::endl;
 		}
 		else if (compare == 2)
 		{
-			out << "Second Player Won" << std::endl;
+			out << "\t\t\t/////////////////\n\t\t\tSecond Player Won\n\t\t\t/////////////////" << std::endl;
 		}
 		else if (compare == 0)
 		{
-			out << "Equal" << std::endl;
+			out << "\t\t\t/////\n\t\t\tEqual\n\t\t\t/////" << std::endl;
 		}
 		else
 		{
